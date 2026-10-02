@@ -1,0 +1,477 @@
+/* ==========================================================================
+   💎 SUDHIR'S UNIFIED RESUME ARCHITECTURE (COMPLETE CONSOLIDATED BUILD)
+   ========================================================================== */
+
+/* 🌐 ROOT COMPLIANCE PARAMETERS */
+:root {
+    --primary-indigo: #2857a4;
+    --midnight-slate: #1a1e29;
+    --text-dark: #2d3748;
+    --text-muted: #718096;
+    --bg-light-stripe: #f7fafc;
+    --section-heading-font-size: 2.2rem;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Inter', '-apple-system', 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    color: var(--text-dark);
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* 🖥️ GLOBAL SECTION ALIGNMENT MATRIX */
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    box-sizing: border-box;
+}
+
+section:nth-child(2n) {
+    background-color: var(--bg-light-stripe);
+}
+
+section:nth-child(2n + 1) {
+    background-color: #ffffff;
+}
+
+section:target {
+    animation: smoothHighlightFade 1.5s ease-in-out;
+}
+
+@keyframes smoothHighlightFade {
+    0% { background-color: rgba(66, 153, 225, 0.15); }
+    100% { background-color: transparent; }
+}
+
+/* 🧱 BODY HEADER INFRASTRUCTURE */
+#body-header {
+    height: 65vh;
+    opacity: 0.95;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(image/mac-pro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.5rem;
+}
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 15px 8px 0px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.horizontal-list li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu li a {
+    border-bottom: 2px solid transparent;
+}
+
+.nav-menu li a:hover {
+    color: #cbd5e0;
+    border-bottom: 2px solid #ffffff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#name-social-container {
+    margin-top: 18vh;
+}
+
+#my-name {
+    font-size: 3.5rem;
+    letter-spacing: 0.15rem;
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.social-icons li a i {
+    padding: 12px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icons li a i:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.25);
+}
+
+.section-heading {
+    width: auto;
+    padding: 10px 20px;
+    margin: 10px auto 40px auto;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.section-heading span {
+    font-size: var(--section-heading-font-size);
+    color: var(--primary-indigo);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* 👥 ABOUT SECTOR STRUCTURE */
+#about {
+    padding: 20px;
+    width: 75%;
+    max-width: 900px;
+    margin: auto;
+    font-family: inherit;
+    text-align: justify;
+    color: #4a5568;
+    line-height: 1.8;
+    font-weight: 400;
+    font-size: 1.15rem;
+    position: relative;
+}
+
+#my-pic {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -15vh;
+    position: relative;
+    z-index: 10;
+}
+
+#my-pic img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+}
+
+/* 💎 TECH STACK PILLS GRID DESIGN */
+.skills-display-modern {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.skill-badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: #1a1e29;
+    border: 1px solid #2d3748;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.pill-python { border-left: 4px solid #3776AB; color: #4B8BBE; }
+.pill-javascript { border-left: 4px solid #F7DF1E; color: #F7DF1E; }
+.pill-react { border-left: 4px solid #61DAFB; color: #61DAFB; }
+.pill-node { border-left: 4px solid #339933; color: #6CC24A; }
+.pill-database { border-left: 4px solid #003B57; color: #00bfa4; }
+.pill-automation { border-left: 4px solid #2B6CB0; color: #4299E1; }
+.pill-html { border-left: 4px solid #E34F26; color: #F16529; }
+
+.skill-badge-pill:hover {
+    transform: translateY(-4px);
+    background: #232936;
+    box-shadow: 0 8px 15px rgba(66, 153, 225, 0.3);
+    border-color: #4299E1;
+}
+
+/* ⏳ INTERACTIVE TIMELINE VAULT */
+#logo {
+    height: 6rem;
+    width: 6rem;
+    margin: 10px auto;
+}
+
+#logo img {
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    object-fit: cover;
+}
+
+.timeline {
+    position: relative;
+    width: 85%;
+    max-width: 1000px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.timeline-divider {
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #cbd5e0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 1;
+}
+
+.timeline-traveller {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    color: #2857a4;
+    font-size: 1.5rem;
+    z-index: 10;
+    background: #ffffff;
+    padding: 5px;
+}
+
+.timeline-box {
+    position: relative;
+    width: 45%;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px 0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid #edf2f7;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.timeline-box:nth-child(2n+1) {
+    align-self: flex-start;
+    margin-right: auto;
+}
+
+.timeline-box:nth-child(2n) {
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    width: 16px;
+    height: 16px;
+    background-color: #e53e3e;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(229, 62, 62, 0.15);
+    z-index: 5;
+}
+
+.timeline-box:nth-child(2n+1)::after { right: -7.5%; }
+.timeline-box:nth-child(2n)::after { left: -7.5%; }
+
+.headerbox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #edf2f7;
+    padding-bottom: 15px;
+}
+
+.headerbox-img { flex-shrink: 0; }
+.details { display: flex; flex-direction: column; text-align: left; }
+.contents { text-align: left; }
+.contents ul { margin: 0; padding-left: 20px; }
+.contents ul li { margin-bottom: 8px; font-size: 0.95rem; line-height: 1.6; color: #4a5568; list-style-type: square; }
+.timeline-box:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(40, 87, 164, 0.15); border-color: #2857a4; }
+
+/* 📧 CONTACT ZONE INFRASTRUCTURE */
+#contact {
+    background: linear-gradient(135deg, #1a1e29 0%, #2857a4 100%);
+    color: #ffffff;
+    padding: 80px 0;
+    width: 100%;
+}
+
+.contact-container {
+    display: flex;
+    width: 85%;
+    max-width: 1100px;
+    margin: 40px auto 0 auto;
+    justify-content: space-between;
+    gap: 50px;
+    box-sizing: border-box;
+}
+
+.contact-form { width: 55%; }
+.address { width: 40%; box-sizing: border-box; }
+
+.address h5 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    border-left: 3px solid #ffffff;
+    padding-left: 10px;
+}
+
+.address p { color: #cbd5e0; font-size: 1.05rem; margin-bottom: 25px; display: flex; align-items: center; }
+.address p span i { color: #ffffff; font-size: 1.2rem; width: 25px; text-align: center; }
+
+.contact-form input,
+.contact-form textarea {
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    padding: 12px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.05);
+    width: 100%;
+    font-size: 1.05rem;
+    font-family: inherit;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+}
+
+.contact-form button[type="submit"] {
+    background: #ffffff;
+    font-size: 1rem;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    color: #1a1e29;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 35px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"]:hover {
+    background: transparent;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.footer-social-vault { margin-top: 50px; padding-top: 30px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+.social-footer li a i { font-size: 1.8rem; color: #a0aec0; transition: all 0.3s ease-in-out; }
+.social-footer li a:hover .fa-github { color: #ffffff; }
+.social-footer li a:hover .fa-linkedin { color: #0077B5; }
+.social-footer li a:hover .fa-stack-overflow { color: #F48024; }
+
+.text-highlight { color: #2857a4; font-weight: 700; }
+.m0 { margin: 0; }
+
+/* 📱 MOBILE RESPONSIVE INTERCEPTOR */
+@media screen and (max-width: 768px) {
+    .contact-container { flex-direction: column; gap: 40px; }
+    .contact-form, .address { width: 100%; }
+    #my-name { font-size: 2.5rem; }
+    .timeline-divider, .timeline-traveller { left: 20px; transform: none; }
+    .timeline-box { width: calc(100% - 40px); margin-left: 40px !important; align-self: flex-start !important; }
+    .timeline-box::after { left: -31px !important; right: auto !important; }
+}
+
+
+/* ==========================================================================
+   📊 PORTFOLIO CONTAINMENT GRID FIXED PARAMETERS (ID MATCH BLOCK)
+   ========================================================================== */
+#portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0;
+    justify-content: center;
+    gap: 30px;
+}
+
+.portfolio-image-container {
+    width: 320px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #1a1e29;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(26, 30, 41, 0.95); /* Dark elegant slate glass effect */
+    opacity: 0;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.portfolio-image-container:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 15px 30px rgba(66, 153, 225, 0.25);
+}
+
+.portfolio-image-container:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    opacity: 1;
+}
